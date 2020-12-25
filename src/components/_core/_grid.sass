@@ -1,21 +1,8 @@
 $layout: 1920px !default
-$container: 1230px !default
+$container: 100px !default
 $colCount: 12 !default
 $offset: 15px !default
-
-// setting breakpoints
-$small: 576px !default
-$medium: 768px !default
-$large: 1024px !default
-$xx-large2: 1366px !default
-$x-large: 1280px !default
-$xx-large: 1300px !default
-$xxx-large: 1400px !default
-// end setting breakpoints
-
-$grid-breakpoints: (sm: $small, md: $medium, lg: $large, xl: $x-large) !default
-$container-breakpoints: ($small: 500px, $medium: 700px, $large: 970px, $x-large: 1200px, $xx-large: 1280px) !default
-
+$grid-breakpoints: (sm: 576px, md: 768px, lg: 1024px, xl: 1280px) !default
 
 body
 	max-width: $layout
@@ -23,17 +10,11 @@ body
 	margin-right: auto 
 
 .container
-	width: 100%
 	max-width: $container + ($offset * 2)
 	padding-right: $offset
 	padding-left: $offset
 	margin-left: auto 
 	margin-right: auto 
-
-@each $bpNumber, $maxWidth in $container-breakpoints
-	@media (min-width: #{$bpNumber})
-		.container
-			max-width: $maxWidth
 
 .container-fluid 
 	width: 100%
@@ -100,3 +81,4 @@ body
 				-ms-flex: 0 0 (100% / $colCount * $col)
 				flex: 0 0 (100% / $colCount * $col)
 				max-width: (100% / $colCount * $col)
+
