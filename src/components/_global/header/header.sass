@@ -1,0 +1,214 @@
+header
+    background-color: #ffffff
+    box-shadow: 0 0 10px 0 rgba(#000000    , 0.5)
+    position: fixed
+    z-index: 10
+    width: 100%
+    left: 0
+    top: 0
+    .main-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100px
+        @media screen and ( max-width: 1023.98px )
+            height: 60px
+        .left-wrap
+        .right-wrap
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            width: 100%
+            > .menu-list
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                list-style: none
+                > li
+                    padding-left: r(35px)
+                    > a
+                        font-size: r(15px)
+                        font-weight: 700
+                        text-transform: uppercase
+                        color: #111111
+                        span
+                            font-size: r(24px)
+                    &.active, &:hover
+                        > a
+                            color: #f5a83d
+            .tool-list
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                .search
+                    cursor: pointer
+                    > span
+                        font-size: r(18px)
+                        color: #f5a83d
+                        margin-left: r(20px)
+                .block_search
+                    width: 100%
+                    height: 100%
+                    background-color: rgba(#0c50a0,0.9)
+                    position: fixed
+                    top: 0
+                    left: 0
+                    z-index: 10
+                    padding: 30px
+                    transform: translateX(100%)
+                    transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+                    &.active
+                        transform: translateX(0)
+                    .search-icon
+                        position: absolute
+                        top: r(10px)
+                        right: r(10px)
+                        cursor: pointer
+                        width: r(40px)
+                        height: r(40px)
+                        border-radius: 50%
+                        background-color: #fff
+                        font-size: r(20px)
+                        +dc
+                        &:hover
+                            color: #f5a83d
+                    .search_box
+                        position: relative
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        width: r(400px)
+                        height: r(40px)
+                        position: relative
+                        input
+                            width: 100%
+                            height: 100%
+                            border: 0
+                            background-color: #ffffff
+                            padding-left: r(10px)
+                            color: #000000
+                            font-size: r(16px)
+                            &::placeholder
+                                color: #000000
+                                font-size: r(16px)
+                                font-style: italic
+                        button
+                            position: absolute
+                            top: 0
+                            right: 0
+                            border: 0
+                            width: r(40px)
+                            height: 100%
+                            background-color: unset
+                            font-size: r(20px)
+                            color: #000000
+                .language-box
+                    position: relative
+                    &:hover
+                        .language
+                            color: #f5a83d
+                            &::after
+                                transform: rotate(180deg)
+                                color: #f5a83d
+                        .other-language
+                            pointer-events: auto
+                            opacity: 1
+                            transform: translateY(0)
+                    .language
+                        cursor: pointer
+                        margin-left: r(15px)
+                        font-size: r(12px)
+                        color: #999999
+                        padding: 5px 0
+                        transition: .3s all
+                        position: relative
+                        &::after
+                            position: absolute
+                            top: 4px
+                            content: '\F0140'
+                            font-family: "Material Design Icons"
+                            font-size: r(14px)
+                            color: #999999
+                            transition: .3s all
+                    .other-language
+                        position: absolute
+                        top: 20px
+                        left: 50%
+                        padding-right: 10px
+                        transform: translateX(-50%)
+                        font-size: r(12px)
+                        color: #999999
+                        pointer-events: none
+                        opacity: 0
+                        transition: .3s all
+                        transform: translateY(20px)
+                        &:hover
+                            color: #f5a83d
+    .button-menu
+        display: none
+        @media screen and ( max-width: 1023.98px )
+            display: block
+            .btn
+                position: relative
+                width: r(40px)
+                height: r(40px)
+                cursor: pointer
+                margin-left: 20px
+                transition: all .3s
+                background-color: $main
+                &:before, &:after
+                    content: ''
+                    position: absolute
+                    transition: all .3s
+                    background-color: #ffffff
+                    height: r(4px)
+                    width: r(30px)
+                    top: 50%
+                    left: 50%
+                    margin-left: r(-15px)
+                &::before
+                    margin-top: r(-6px)
+                &::after
+                    margin-top: r(4px)
+                &.active
+                    border-radius: 40px
+                    background-color: #f5a83d
+                    &:before, &:after
+                        background-color: #ffffff
+                        margin-left: r(-15px)
+                        margin-top: r(-2px)
+                    &:before
+                        transform: rotate(45deg)
+                    &:after
+                        transform: rotate(-45deg)
+    .mobile-wrap
+        display: none
+        @media(max-width: 1023.98px)
+            position: fixed
+            right: 0
+            bottom: 0
+            top: 60px
+            height: 100vh
+            background-color: #0c50a0
+            width: 100vw
+            display: block
+            transform: translateX(100%)
+            transition: all .6s cubic-bezier(.68,-.55,.265,1.55)
+            z-index: 10
+            overflow-y: auto
+            overflow-x: hidden
+            &.active
+                transform: translateX(0)
+            .menu-list
+                padding: 50px
+                list-style: none
+                li
+                    padding: 10px 0
+                    a
+                        font-size: r(18px)
+                        text-transform: uppercase
+                        color: #fff
+                    &.active, &:hover
+                        > a
+                            color: #f5a83d

@@ -1,15 +1,40 @@
 header
-	.container
-		.main-wrap 
-			.left-wrap
-				a(href="/").logo
-					img(src="./img/logo.png", alt="")
-			.right-wrap
-				.main-menu 
-					ul.menu-list
-						li.has-mega-menu
-							a(href="#") Trang chủ
-						li.has-mega-menu
-							a(href="#") Giới thiệu
-						li.has-mega-menu
-							a(href="#") Sản phẩm
+    .container
+        .main-wrap 
+            .left-wrap
+                a(href="/").logo
+                    img(src="./img/logo.png", alt="")
+            .right-wrap
+                ul.menu-list
+                    li.active
+                        a(href="#")
+                            span.mdi.mdi-home
+                    li
+                        a(href="#") Giới thiệu
+                    li
+                        a(href="#") Công nghệ
+                    li
+                        a(href="#") Dịch vụ
+                    li
+                        a(href="#") Dự án
+                    li
+                        a(href="#") Tin tức
+                    li
+                        a(href="#") Tuyển dụng
+                    li
+                        a(href="#") Liên hệ
+                .tool-list
+                    .search
+                        span.mdi.mdi-magnify
+                    .block_search
+                        .search-icon
+                            span.mdi.mdi-close
+                        .search_box
+                            input(type="text" placeholder="Tìm kiếm")
+                            button(type="submit").mdi.mdi-magnify
+                    .language-box
+                        .language VN
+                        a(href="#").other-language EN
+                .button-menu
+                    .btn
+    .mobile-wrap
