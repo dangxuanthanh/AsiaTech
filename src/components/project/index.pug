@@ -1,0 +1,31 @@
+section.section_project
+    .wrapper
+        .container
+            .title Mang lại lợi ích lớn và giá trị gia tăng cho Quý khách hàng từ việc chi phí đầu tư thấp, chi phí vận hành thấp (CÔNG NGHỆ NGOẠI - GIÁ NỘI)
+            .option-list
+                select
+                    option(value="") Dự án trong nước
+                select
+                    option(value="") Tất cả
+            .row.mt-40
+                -for(i=1;i<=6;i++)
+                    .col-lg-6
+                        .card-project
+                            .card-img
+                                a(href="#")
+                                    .img
+                                        img(src="./img/project/1.png", alt="")
+                            .card-content
+                                a(href="#").name KCN Đông Nam Á
+                                .content
+                                    p Địa Điểm :  Củ Chi – Tp.HCM
+                                    p Công Suất :  10.000 M3/Ngày.Đêm
+                                    p (GĐ I : 5.000 M3/Ngày.Đêm)
+                                a(href="#").read-detail Xem chi tiết
+            ul.pagination
+                li.active
+                    a(href="") 1
+                li
+                    a(href="") 2
+                li
+                    a(href="") 3

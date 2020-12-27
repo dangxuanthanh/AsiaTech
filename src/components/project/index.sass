@@ -1,0 +1,64 @@
+.section_project
+    .wrapper
+        background-color: #ffffff
+        max-width: 1310px
+        padding: r(30px) 0
+        box-shadow: 0 0 10px 0 rgba(#000000,0.2)
+        margin-top: r(-100px)
+        position: relative
+        z-index: 5
+        margin-left: auto
+        margin-right: auto
+        @media screen and ( max-width: 1280px )
+            margin-top: unset
+        .title
+            color: #333333
+        .option-list
+            padding-top: r(20px)
+            padding-bottom: r(30px)
+            border-bottom: 2px solid #ff9b28
+            @media screen and ( max-width: 576px )
+                display: flex
+                justify-content: space-between
+            select
+                width: r(280px)
+                height: r(45px)
+                padding: 0 r(20px)
+                font-size: r(18px)
+                margin-right: r(30px)
+                @media screen and ( max-width: 576px )
+                    width: 49%
+                    height: 35px
+                    margin-right: unset
+        .card-project
+            box-shadow: 0 0 10px 0 rgba(#000000,0.2)
+            display: flex
+            margin-bottom: r(30px)
+            &:hover
+                .card-content
+                    .name, .read-detail
+                        color: #ff9b28
+            @media screen and ( max-width: 576px )
+                display: block
+            .card-img
+                width: 50%
+                @media screen and ( max-width: 576px )
+                    width: 100%
+                .img
+                    +img-scale(210/300)
+            .card-content
+                padding: r(20px) r(30px)
+                display: flex
+                flex-direction: column
+                justify-content: center
+                .name
+                    font-size: r(18px)
+                    color: #333333
+                    font-weight: 700
+                .content
+                    padding-top: r(5px)
+                    font-size: r(14px)
+                    color: #666666
+                    margin-bottom: r(20px)
+                    height: r(85px)
+                    +line(4)
