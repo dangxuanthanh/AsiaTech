@@ -1,2 +1,103 @@
 .mt-40
     margin-top: r(40px)
+.btn-pri
+.btn-click
+    display: flex
+    justify-content: center
+.see-more
+    border-radius: 30px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 10px
+    padding-right: 20px
+    width: 220px
+    text-transform: uppercase
+    font-size: r(14px)
+    letter-spacing: 2px
+    position: relative
+    display: flex
+    justify-content: center
+    &.after
+        background-color: #ff9e16
+        color: white
+        &::after
+            width: 30px
+            height: 10px
+            top: 40%
+            display: flex
+            right: 10%
+            position: absolute
+            content: ''
+            background-image: url(../img/ic/right.png)
+            background-size: 100%
+            transition: .3s all
+            background-repeat: no-repeat
+    &.before
+        color: #ff9e16
+        border: 1px solid #ff9e16
+        &::before
+            width: 30px
+            height: 10px
+            top: 40%
+            display: flex
+            left: 0
+            position: absolute
+            content: ''
+            background-image: url(../img/ic/left.png)
+            background-size: 100%
+            transition: .3s all
+            background-repeat: no-repeat
+    &:hover
+        &::before
+            left: 10%
+        &::after
+            right: 5%
+.title-block
+    font-size: r(36px)
+    color: black
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+.swiper-but
+    .swiper-button-next
+        border: 1px solid white
+        padding: 0 20px
+        color: white
+        &::after
+            content: '\F0142'
+            font-family: 'Material Design Icons'
+            font-size: r(24px)
+            transition: .3s all ease-in-out
+        &:hover
+            background: #ff9e16
+            border: 1px solid #ff9e16
+    .swiper-button-prev
+        border: 1px solid white
+        padding: 0 20px
+        color: white
+        &::after
+            content: '\F0141'
+            font-family: 'Material Design Icons'
+            font-size: r(24px)
+            transition: .3s all ease-in-out
+        &:hover
+            background: #ff9e16
+            border: 1px solid #ff9e16
+.tab
+    display: flex
+    cursor: pointer
+    .tab-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+        a
+            font-size: r(24px)
+            color: black
+        &:hover
+            a
+                color: #f5a83d
+            border-bottom: 1px solid #f5a83d
+        &.active
+            a
+                color: #f5a83d
+            border-bottom: 1px solid #f5a83d

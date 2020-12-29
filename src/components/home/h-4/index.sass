@@ -1,0 +1,50 @@
+.h-4
+    margin-top: 60px
+    .content-section
+        padding-bottom: 30px
+        margin-top: 30px
+    .content-wrapper
+        display: flex
+        height: 100%
+        justify-content: center
+        flex-direction: column
+        .title-wrapper
+            font-size: r(24px)
+            font-weight: 700
+            color: black
+        .content-block
+            font-size: r(16px)
+            color: black
+            padding: 20px 0
+        .btn-click
+            justify-content: flex-start
+    .index4
+        @media screen and ( max-width: 576px )
+            .swiper-but
+                display: none
+    .image-wrapper
+        position: relative
+        a
+            +img-ratio(420/600)
+        @media screen and ( max-width:768px )
+            margin-top: 30px
+        .description
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 200px
+            height: 40px
+            background-color: #f5a83d
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: r(16px)
+    .title-link
+        font-size: r(16px)
+        padding-top: 10px
+        padding-left: 10px
+        a
+            font-size: r(22px)
+            color: #f5a83d
+            font-weight: 700

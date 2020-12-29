@@ -1,0 +1,26 @@
+.breadcrumbs
+    display: flex
+    align-items: center
+    padding: 10px 0
+    list-style: none
+    position: absolute
+    top: 25%
+    left: 7.5%
+    z-index: 1
+    .breadcrumb
+        display: flex
+    li
+        a
+            font-size: r(14px)
+            color: #ffffff
+            font-weight: 500
+        &:hover, &:last-child
+            a
+                color: #ff9b28
+                &::before
+                    color: #ffffff
+        &:not(:first-child)
+            a
+                &::before
+                    content: "/"
+                    padding: 0 r(5px)

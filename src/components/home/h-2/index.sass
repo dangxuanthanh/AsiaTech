@@ -1,0 +1,144 @@
+.h-2
+    margin-top: r(60px)
+    .item-block
+        margin-top: 15px
+        margin-bottom: 30px
+        .row
+            margin-right: -7px
+            margin-left: -7px
+        .col-12.col-lg-8
+            padding-right: 7px
+            padding-left: 7px
+        .col-12.col-lg-4
+            padding-right: 7px
+            padding-left: 7px
+    .image-wrapper
+        a
+            background: #ccc
+            +img-ratio(510/810)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            @media screen and ( max-width: 1200.1px )
+                +img-ratio(511/810)
+            @media screen and ( max-width: 992.1px )
+                +img-ratio(512/810)
+            @media screen and ( max-width: 920px )
+                +img-ratio(513/810)
+    .image-wrapper-small
+        a
+            background: #ccc
+            +img-ratio(252/405)
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    .content-box
+        margin-bottom: 15px
+        position: relative
+        &:hover
+            .content-block, .content-block2
+                visibility: visible
+                opacity: 1
+                transform: translateY(0)
+    .title
+        position: absolute
+        bottom: 5%
+        left: 4%
+        font-size: r(16px)
+        color: white
+        text-transform: uppercase
+        font-weight: 700
+    .content-block
+        width: 95%
+        height: 95%
+        background: #f5a83d
+        visibility: hidden
+        opacity: 0
+        position: absolute
+        transition: .3s all ease-in-out
+        transform: translateY(100px)
+        top: 2.5%
+        left: 2.5%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 0 50px
+        @media screen and ( max-width: 576px )
+            padding: 0
+        .img-logo
+            @media screen and ( max-width: 576px )
+                padding-left: 5%
+            img
+                margin-bottom: 15px
+                @media screen and ( max-width: 576px )
+                    width: 15%
+            p
+                text-transform: uppercase
+                color: white
+                font-weight: 700
+                font-size: r(16px)
+        .full-content
+            margin-top: 30px
+            color: white
+            font-size: r(16px)
+            @media screen and ( max-width: 576px )
+                margin-top: 10px
+                padding: 0 15px
+                height: 68px
+                overflow: hidden
+                overflow: auto
+            &::-webkit-scrollbar
+                width: 2px
+            &::-webkit-scrollbar-thumb
+                background: #f5d5a8
+            background:#f5a83d
+    .content-block2
+        width: 95%
+        height: 95%
+        top: 2.5%
+        opacity: 0
+        visibility: hidden
+        left: 2.5%
+        flex-direction: column
+        transition: .3s all ease-in-out
+        transform: translateY(100px)
+        justify-content: center
+        background: #f5a83d
+        padding-right: 10px
+        position: absolute
+        @media screen and ( max-width: 576px )
+            padding: 0
+        .img-logo
+            padding-left: 5%
+            padding-top: 5%
+            @media screen and ( max-width: 576px )
+                padding-left: 5%
+            img
+                margin-bottom: 5px
+                @media screen and ( max-width: 576px )
+                    width: 15%
+            p
+                text-transform: uppercase
+                color: white
+                font-weight: 700
+                font-size: r(16px)
+        .full-content
+            margin-top: 15px
+            color: white
+            padding: 0 20px
+            height: 70px
+            overflow: auto
+            font-size: r(16px)
+            @media screen and ( max-width: 576px )
+                margin-top: 10px
+                padding: 0 15px
+                height: 68px
+                overflow: hidden
+                overflow: auto
+            &::-webkit-scrollbar
+                width: 2px
+            &::-webkit-scrollbar-thumb
+                background: #f5d5a8
+            background:#f5a83d

@@ -1,0 +1,33 @@
+.h-7
+    padding-bottom: 50px
+    .fullcontent
+        font-size: r(16px)
+        color: black
+        text-align: center
+        padding: 15px 50px
+        @media screen and ( max-width: 576px )
+            padding: 5px
+    .content-block
+        .row
+            display: flex
+            justify-content: center
+            align-items: center
+    .box-clip
+        position: relative
+    .clip-wrapper
+        a
+            +img-ratio(479/810)
+    .play
+        position: absolute
+        top: 50%
+        font-size: r(50px)
+        left: 50%
+        color: white
+        transform: translate(-50%, -50%)
+        border: 3px solid white
+        border-radius: 50%
+        width: 80px
+        height: 80px
+        display: flex
+        justify-content: center
+        align-items: center

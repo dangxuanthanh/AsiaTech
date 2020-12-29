@@ -1,0 +1,117 @@
+footer
+    .pb-2
+        padding-bottom: 20px
+    .footer-top
+        width: 100%
+        background: #0b1232
+        padding-top: 60px
+        .title-block
+            font-size: r(18px)
+            text-align: left
+            color: white
+            text-transform: uppercase
+        .content-block
+            color: #ffffff
+            font-size: r(14px)
+            opacity: 0.8
+            margin-bottom: 20px
+            p
+                display: flex
+                font-weight: 400
+                margin-bottom: 5px
+                span
+                    margin-left: 5px
+            .title
+                color: #ffffff
+                font-size: r(14px)
+                opacity: 0.8
+                text-transform: uppercase
+    .content-image-block
+        padding-bottom: 30px
+        .row
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-left: 0px
+            margin-right: 0px
+        .col-6
+            padding-left: 0px
+            padding-right: 0px
+    .img-ic
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: auto
+            object-fit: cover
+    .box-foot
+        width: 100%
+        position: relative
+        padding-top: 20px
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 35px
+            height: 1.5px
+            background: #ff9b28
+    .box-connect
+        width: 100%
+        padding-top: 20px
+        padding-bottom: 20px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 35px
+            height: 1.5px
+            background: #ff9b28
+    .content-link-block
+        display: flex
+        .link
+            width: 42px
+            height: 40px
+            background: #0a1b3f
+            margin-right: 10px
+            &:last-child
+                margin-right: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #8c97a9
+            font-size: r(18px)
+    .footer-bot
+        width: 100%
+        background: #0a1b3f
+        .content-block
+            display: flex
+            justify-content: space-between
+            @media screen and ( max-width: 576px )
+                justify-content: flex-start
+                flex-direction: column
+        .copyright
+            font-size: r(14px)
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 75px
+            color: #8c97a9
+        .sitemap
+            font-size: r(14px)
+            color: #8c97a9
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 75px
+            a
+                text-decoration: underline
+                margin-left: 7.5px
+                margin-right: 7.5px
+                &:last-child
+                    margin-right: 0
+                @media screen and ( max-width: 576px )
+                    &:first-child
+                        margin-left: 0
