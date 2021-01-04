@@ -1,0 +1,116 @@
+.technology-detail
+    padding-bottom: 60px
+    .image-thumb
+        position: relative
+        .swiper-button-next
+            position: absolute
+            top: 90%
+            right: -20px
+            border: 1px solid #999999
+            color: #999999
+            background: #ffffff
+            z-index: 100 
+            &:hover
+                color: white
+                background-color: $main
+                border: 1px solid $main
+            @media screen and ( min-width: 768px )
+                top: 87%
+            @media screen and ( min-width: 1024.1px )
+                top: 89%
+        .swiper-button-prev
+            position: absolute
+            border: 1px solid #999999
+            color: #999999
+            background: #ffffff
+            top: 90%
+            left: -20px
+            z-index: 100 
+            &:hover
+                color: white
+                background-color: $main
+                border: 1px solid $main
+            @media screen and ( min-width: 768px )
+                top: 87%
+            @media screen and ( min-width: 1024.1px )
+                top: 89%
+    .wrapper
+        padding: 30px
+    .gallery-top
+        margin-bottom: 30px
+        @media screen and ( max-width: 576px )
+            margin-bottom: 10px
+        .swiper-slide
+            background: #ccc
+            a
+                +img-ratio(660/1230)
+    .swiper-container
+    .gallery-thumbs
+        .swiper-slide
+            border: 1px solid #999999
+            a
+                +img-ratio(200/285)
+    .swiper-but
+        @media screen and ( max-width: 576px )
+            display: none
+
+    .fullcontent
+        padding: 30px 0
+        color: black
+        font-size: r(16px)
+    .title-block
+        font-size: r(24px)
+        text-align: left
+        position: relative
+        &::before
+            position: absolute
+            bottom: -7px
+            left: 0
+            content: ''
+            width: 100px
+            height: 2px
+            background-color: $main
+    .content-news
+        margin-top: 30px
+        position: relative
+    .news-other
+        .swiper-button-next
+            position: absolute
+            top: 50%
+            border: 1px solid #999999
+            color: #999999
+            background: #ffffff
+            right: -20px
+            &:hover
+                background-color: $main
+                border: 1px solid $main
+                color: white
+        .swiper-button-prev
+            position: absolute
+            top: 50%
+            border: 1px solid #999999
+            color: #999999
+            background: #ffffff
+            left: -20px
+            &:hover
+                border: 1px solid $main
+                background-color: $main
+                color: white
+            // .img-news
+            //     position: relative
+            //     border: 1px solid #ccc
+            //     a
+            //         +img-ratio(190/285)
+        .img-news
+            background-color: #ccc
+            a
+                +img-ratio(190/285)
+        .title
+            font-size: r(20px)
+            text-transform: uppercase
+            color: white
+            font-weight: 600
+            bottom: 10%
+            left: 10%
+            z-index: 2
+            position: absolute

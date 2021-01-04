@@ -1,0 +1,65 @@
+.i-6
+    background-color: #eff6fb
+    padding-bottom: 50px
+    .tab-panels
+        margin: 20px 0
+        padding: 0 10px
+        li
+            margin-right: 10px
+            a
+                color: $main
+                background: white
+                border: 1px solid $main
+                padding: 8px 20px
+                border-radius: 30px
+                font-size: r(16px)
+                font-weight: 600
+            &.active, &:hover
+                border-bottom: 0 !important
+                a
+                    color: white
+                    background-color: $main
+    .tab-navigation
+        white-space: nowrap
+        overflow-x: auto
+        overflow-y: hidden
+        padding: 15px 0
+        &::-webkit-scrollbar
+            height: 2px
+        &::-webkit-scrollbar-thumb
+            background-color: $main
+        @media screen and ( max-width: 768px )
+            display: flex
+            justify-content: flex-start
+        &.active
+            border-bottom: 0 !important
+    .slide-item
+        padding: 20px
+        .wrap-slide
+            margin-top: 40px
+    .brand-list
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 80px
+    .wrap-slide
+        position: relative
+    .swiper-button-prev
+        position: absolute
+        top: 50%
+        left: -50px
+        border: 1px solid #999999
+        color: #999999
+        &:hover
+            color: white
+    .swiper-button-next
+        position: absolute
+        top: 50%
+        right: -50px
+        border: 1px solid #999999
+        color: #999999
+        &:hover
+            color: white
+    .swiper-but
+        @media screen and ( max-width: 1024px )
+            display: none

@@ -1,0 +1,54 @@
+.i-4
+    padding: 0 0 60px 0
+    .col-12.col-lg-6
+        @media screen and ( max-width: 1023.9px)
+            flex-direction: column-reverse
+    .item-4
+        .image-wrapper
+            background-color: #ccc
+            position: relative
+            &::before
+                position: absolute
+                bottom: -5%
+                right: -5%
+                width: 500px
+                height: 400px
+                content: ''
+                background-image: url(../img/introduce/dot.png)
+                background-size: 100%
+                background-repeat: no-repeat
+            @media screen and ( max-width: 1300px )
+                &::before
+                    right: 0%
+            @media screen and ( max-width: 768px )
+                margin-bottom: 30px
+                &::before
+                    display: none
+            a
+                +img-ratio(750/600)
+        .content-block
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            .title-block
+                color: black
+                text-align: left
+        .fullcontent
+            padding: 50px 20px
+            margin-right: -80px
+            z-index: 1
+            background-color: rgb(255, 255, 255)
+            box-shadow: 2.294px 3.277px 10px 0px rgba(0, 0, 0, 0.15)
+            color: black
+            font-size: r(16px)
+            @media screen and ( max-width: 1023.9px )
+                padding: 20px 15px
+                margin-right: 0
+            p
+                margin-top: 15px
+            h3
+                font-size: r(24px)
+            span
+                display: flex
+                margin-top: 30px

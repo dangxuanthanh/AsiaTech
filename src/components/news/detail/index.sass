@@ -1,0 +1,115 @@
+.news-detail
+    padding-bottom: 60px
+    .wrapper
+        padding: 20px
+        padding-top: 50px
+    .content-block
+        padding-left: 45px
+        @media screen and ( max-width: 1023.9px )
+            padding: 0  
+        .title-page
+            font-size: r(30px)
+            line-height: 1
+            margin-bottom: 10px
+        .box-head
+            font-size: r(18px)
+            display: flex
+            border-bottom: 1px solid #ccc
+            padding-bottom: 8px
+            margin-bottom: 20px
+            justify-content: space-between
+            time
+                color: #999999
+            .media-links
+                color: white
+                a
+                    margin-right: 10px
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        em
+                            background-color: $main
+                em
+                    padding: 5px
+                    border-radius: 50%
+                    background-color: #999999
+        .fullcontent
+            font-size: r(18px) !important
+            h5
+                font-size: r(18px) !important
+                font-weight: 600
+                margin-bottom: 20px
+            h4
+                font-weight: 600
+                text-transform: uppercase
+                color: $main
+                margin-bottom: 20px
+            p
+                margin-bottom: 20px
+    .other-news
+        .title-block
+            font-size: r(24px)
+            font-weight: 700
+            position: relative
+            text-align: left
+            padding-bottom: 10px
+            &::before
+                content: ''
+                width: 90px
+                height: 2px
+                background-color: $main
+                position: absolute
+                bottom: 0
+                left: 0
+        .box-news
+            padding-right: 30px
+            .inbox
+                display: flex
+                margin-top: 30px
+                align-items: center
+                border-bottom: 1px solid #ccc
+                padding-bottom: 20px
+                @media screen and ( max-width: 768px )
+                    padding-bottom: 50px
+                @media screen and ( max-width: 576px )
+                    padding-bottom: 25px
+                .image-wrapper
+                    background-color: #ccc
+                    width: 300px
+                    height: 70px
+                    @media screen and ( max-width: 1024px )
+                        height: 50px
+                    @media screen and ( max-width: 1023.9px )
+                        height: auto
+                        width: 300px
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                    a
+                        @media screen and ( max-width: 768px )
+                            +img-ratio(150/230)
+                .content-text
+                    padding: 0
+                    font-size: r(13px)
+                    padding-left: 20px
+                    time
+                        font-size: r(12px)
+                        color: #999999
+                    .caption
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        -webkit-line-clamp: 3
+                        -webkit-box-orient: vertical
+                        display: -webkit-box
+                        @media screen and ( max-width: 1024px )
+                            -webkit-line-clamp: 2
+                        @media screen and ( max-width: 768px )
+                            -webkit-line-clamp: 3
+                        a
+                            line-height: 1.2
+                            font-weight: 700
+                            font-size: r(14px)
+                            color: black
+                            &:hover
+                                color: $main

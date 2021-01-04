@@ -2,11 +2,12 @@ section.h-6
     .container
         .head-title
             h2.title-block tin tức - sự kiện
-            .tab
-                .tab-item.active
-                    a(href="") Tin môi trường
-                .tab-item
-                    a(href="") Sự kiện
+            .tab-panels
+                ul.tab-navigation
+                    li.active
+                        a(href="javascript:void(0)"  data-type='tab-1') Tin môi trường
+                    li
+                        a(href="javascript:void(0)" data-type='tab-2') Sự kiện
         .news-block
             .row
                 .col-12.col-lg-6

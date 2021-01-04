@@ -1,0 +1,143 @@
+.contact-page
+    padding-bottom: 60px
+    .contact
+    .wrapper
+        padding: 0
+        background-color: none 
+        box-shadow: none
+    .wrap-form
+        padding: 50px
+    .title-block
+        text-align: left
+        text-transform: none
+        color: #0c50a0
+        font-size: r(24px)
+    .form-group
+        input
+            width: 100%
+        textarea
+            width: 100%
+    .info-contact
+        width: 100%
+        border: 0
+        height: 100%
+        position: relative
+        background: #0588c9
+        background: -webkit-gradient(linear,right top,left top,from(#0588c9),to(#0c50a0))
+        background: -o-linear-gradient(right,#0588c9 0,#0c50a0 100%)
+        background: linear-gradient(-90deg,#0588c9,#0c50a0)
+        &::before
+            position: absolute
+            bottom: 0
+            width: 400px
+            height: 400px
+            right: 0
+            content: ''
+            background-image: url(../img/contact/1.png)
+            background-size: 100%
+            background-repeat: no-repeat
+    .title-block
+        margin-bottom: 10px
+    .maps
+        margin-top: 60px
+        @media screen and ( max-width: 768px )
+            margin-top: 100px            
+    .form-group
+        margin-bottom: 20px
+    label
+        font-size: r(16px)
+        color: black
+        font-weight: 600
+    input[type="text"], input[type="email"]
+        border: 0
+        background-color: #f3f3f3
+        height: 30px
+        padding: 20px
+        margin-top: 10px
+    textarea[type="text"]
+        border: 0
+        background-color: #f3f3f3
+        height: 110px
+        margin-top: 10px
+        padding: 20px
+        padding-top: 10px
+    .submit-info
+        display: flex
+        height: 40px
+        align-items: center
+        justify-content: space-between
+        @media screen and ( max-width: 576px )
+            display: block
+    .frm-btnwrap
+        display: flex
+        justify-content: flex-end
+        .frm-btn
+            position: relative
+            input[type="submit"]
+                border-radius: 30px
+                background-color: #0c50a0
+                border: 0
+                font-size: r(14px)
+                color: white
+                padding-top: 10px
+                padding-bottom: 10px
+                padding-left: 75px
+                padding-right: 100px
+                text-transform: uppercase
+            &::after
+                position: absolute
+                top: 40%
+                right: 30%
+                content: ''
+                width: 30px
+                transition: .3s all ease-in-out
+                cursor: pointer
+                height: 30px
+                background-image: url(../img/ic/right.png)
+                background-size: 100%
+                background-repeat: no-repeat
+            &:hover
+                &::after
+                    right: 25%
+    .code
+        display: flex
+        @media screen and ( max-width: 1024px )
+            display: block
+            margin-top: 30px
+        @media screen and ( max-width: 576px )
+            margin-top: 0px
+    .qr-code
+        width: 180px
+        margin-right: 50px
+        height: 100%
+        background-color: #ccc
+        @media screen and ( max-width: 1024px )
+            margin-bottom: 10px
+    .frm-number
+        @media screen and ( max-width: 768px )
+            margin: 10px 0
+        input
+            margin-top: 0
+            &::placeholder
+                color: black !important
+            @media screen and ( max-width: 576px )
+                width: 100%
+    .info-contact
+        padding: 50px 80px
+        color: white
+        @media screen and ( max-width: 768px )
+            margin-top: 70px
+            padding: 15px 30px
+        .title-block
+            color: white !important
+            text-transform: none
+            margin-bottom: 50px
+        .content-group
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+            h5
+                text-transform: uppercase
+                font-size: r(18px)
+            p
+                font-size: r(16px)

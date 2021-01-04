@@ -1,0 +1,108 @@
+.hr-detail
+    padding-bottom: 60px
+    .wrapper
+        padding: 30px
+    .wrapper
+        padding: 20px
+        padding-top: 50px
+    .content-item
+        margin-bottom: 30px
+    .content-block
+        display: flex
+        border-bottom: 1px solid #ccc
+        justify-content: space-between
+        margin-bottom: 30px
+        padding-bottom: 20px
+        @media screen and ( max-width: 767px )
+            display: block
+        .title-page
+            font-size: r(30px)
+            line-height: 1
+        .box-head
+            font-size: r(18px)
+            @media screen and ( max-width: 767px )
+                margin-top: 15px
+            .media-links
+                color: white
+                a
+                    margin-right: 10px
+                    &:last-child
+                        margin-right: 0
+                    &:hover
+                        em
+                            background-color: $main
+                em
+                    padding: 5px
+                    border-radius: 50%
+                    background-color: #999999
+    .fullcontent
+        color: #666666
+        font-size: r(16px)
+        h4
+            font-size: r(24px)
+            color: $main
+            margin-bottom: 15px
+            text-transform: uppercase
+        ul
+            list-style-position: inside
+            li
+                margin-bottom: 15px
+    .btn-hr
+        padding: 20px 0
+        display: flex
+        @media screen and ( max-width: 767px )
+            display: block
+        p
+            color: #666666
+            font-size: r(18px)
+            margin: 0 30px
+            @media screen and ( max-width: 767px )
+                opacity: 0
+        a
+            font-size: r(18px)
+            color: white
+            transition: .3s all ease-in-out
+            border: 1px solid white
+            padding: 10px 40px
+            border-radius: 50px
+            background-color: #0c50a0
+            text-transform: uppercase
+            &:hover
+                color: #0c50a0
+                background-color: white
+                border: 1px solid #0c50a0
+    .title
+        color: black
+        font-size: r(24px)
+        text-transform: uppercase
+        font-weight: 550
+        padding-bottom: 8px
+        margin-bottom: 10px
+        position: relative
+        &::before
+            position: absolute
+            content: ''
+            bottom: 0
+            left: 0
+            width: 90px
+            height: 2px
+            background-color: $main
+    .item-hr
+        color: #666666
+        border-bottom: 1px solid #e5e5e5
+        padding-bottom: 15px
+        margin-bottom: 15px
+        h4
+            font-size: r(18px)
+            &:hover
+                color: $main
+    .location
+        display: flex
+    .detail
+        display: flex
+        @media screen and ( max-width: 1024px )
+            display: block
+        .price
+            font-size: r(16px)
+            color: $main
+            margin-right: 30px

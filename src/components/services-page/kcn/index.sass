@@ -1,0 +1,159 @@
+.services-kcn
+    .wrapper
+        padding: 30px
+    .title-block-2
+        font-size: r(24px)
+        text-transform: uppercase
+        color: white
+        position: relative
+        padding-bottom: 8px
+        margin-bottom: 15px
+        &::before
+            content: ''
+            width: 130px
+            bottom: 0
+            left: 0
+            position: absolute
+            height: 2px
+            background-color: $main
+    .title-block
+        text-align: left
+        width: 100%
+        border-bottom: 2px solid $main
+        padding-bottom: 10px
+    .fullcontent
+        padding-top: 30px
+        p
+            margin-bottom: 10px
+            display: flex
+            flex-direction: column
+            img
+                width: max-content
+                margin: 0 auto
+    .tech-wrap
+        margin-top: 60px
+        background: rgb(5,136,201)
+        background: -moz-linear-gradient(-90deg, rgba(5,136,201,1) 0%, rgba(12,80,160,1) 100%)
+        background: -webkit-linear-gradient(-90deg, rgba(5,136,201,1) 0%, rgba(12,80,160,1) 100%)
+        background: linear-gradient(-90deg, rgba(5,136,201,1) 0%, rgba(12,80,160,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0588c9",endColorstr="#0c50a0",GradientType=1)
+    .item-wrap
+        padding: 60px
+        @media screen and ( max-width: 576px )
+            padding: 30px 0
+        .swiper-but
+            @media screen and ( max-width: 576px)
+                display: none
+        .swiper-button-next
+            background-color: #ffffff
+            color: #999999
+            border: 1px solid #999999
+            right: -55px
+            &:hover
+                background-color: $main
+                border: 1px solid $main
+                color: white
+        .swiper-button-prev
+            left: -55px
+            color: #999999
+            border: 1px solid #999999
+            background-color: #ffffff
+            &:hover
+                background-color: $main
+                border: 1px solid $main
+                color: white
+        .content-block
+            display: flex
+            justify-content: center
+            flex-direction: column
+            color: white
+            padding-right: 50px
+            height: 100%
+            font-size: r(16px)
+        .image-wrapper
+            background-color: #ccc
+            @media screen and ( max-width: 768px )
+                margin-top: 30px
+            a
+                +img-ratio(400/600)
+        .title
+            width: 100%
+            background-color: $main
+            font-size: r(20px)
+            color: white
+            font-weight: 700
+            padding: 10px
+            text-transform: uppercase
+    .sec-project
+        padding: 60px
+        @media screen and ( max-width: 576px )
+            padding: 15px
+        .title-block-2
+            color: black
+    .demo
+        position: relative
+        .item
+            background-color: #ccc
+            a
+                +img-ratio(180/285)
+        .swiper-button-next
+            position: absolute
+            top: 50%
+            color: #999999
+            right: -80px
+            border: 1px solid #999999
+            &:hover
+                color: white
+                border: 1px solid $main
+            @media screen and ( max-width: 1024px )
+                right: -60px
+        .swiper-button-prev
+            position: absolute
+            top: 50%
+            color: #999999
+            left: -80px
+            border: 1px solid #999999
+            &:hover
+                border: 1px solid $main
+                color: white
+            @media screen and ( max-width: 1024px )
+                left: -60px
+        .swiper-but
+            @media screen and ( max-width: 576px )
+                display: none
+        .title
+            font-size: r(18px)
+            font-weight: 700
+            &:hover
+                color: $main
+#modal
+    width: 1020px
+    display: none
+    .fullcontent
+        padding-top: 30px
+        p
+            font-size: r(16px)
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100% 
+            &:nth-child(6)
+                text-align: center
+            img
+                margin-bottom: 10px
+                width: auto
+                &:nth-child(1)
+                    width: 100% !important
+        span
+            display: flex
+        h3
+            font-size: r(20px)
+            margin-bottom: 20px
+.fancybox-close-small
+    background: $main !important
+    // padding: 0 !important
+    // display: flex !important
+    justify-content: center !important
+    color: white !important
+    // svg
+    //     height: 100% !important
+    //     width: 130% !important

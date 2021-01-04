@@ -62,6 +62,7 @@
     .swiper-button-next
         border: 1px solid white
         padding: 0 20px
+        outline: 0
         color: white
         &::after
             content: '\F0142'
@@ -74,6 +75,7 @@
     .swiper-button-prev
         border: 1px solid white
         padding: 0 20px
+        outline: 0
         color: white
         &::after
             content: '\F0141'
@@ -83,21 +85,72 @@
         &:hover
             background: #ff9e16
             border: 1px solid #ff9e16
-.tab
-    display: flex
-    cursor: pointer
-    .tab-item
-        margin-right: 30px
-        &:last-child
-            margin-right: 0
-        a
-            font-size: r(24px)
-            color: black
-        &:hover
+
+// .tab-item
+//     display: inline-block
+//     &.active
+//         display: block 
+
+.tab-panels
+    .tab-navigation
+        display: flex
+        list-style: none
+        justify-content: center
+        li
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
             a
-                color: #f5a83d
-            border-bottom: 1px solid #f5a83d
-        &.active
+                font-size: r(24px)
+                color: black
+            &:hover
+                a
+                    color: #ff9e16
+                border-bottom: 1px solid #ff9e16
+            &.active
+                a
+                    color: #ff9e16
+                border-bottom: 1px solid #ff9e16
+.wrapper
+    background-color: #ffffff
+    padding: r(30px) 0
+    box-shadow: 0 0 10px 0 rgba(#000000,0.2)
+    margin-top: r(-100px)
+    position: relative
+    z-index: 5
+    margin-left: auto
+    margin-right: auto
+    @media screen and ( max-width: 1280px )
+        margin-top: unset
+
+.links-wrap
+    padding-bottom: 10px
+    border-bottom: 2px solid $main
+    margin-bottom: 30px
+    @media screen and ( max-width: 1200px )
+        border-bottom: 0
+    .links
+        white-space: nowrap
+        display: flex
+        list-style: none
+        justify-content: center
+        overflow-x: auto
+        @media screen and ( max-width: 1200px )
+            justify-content: flex-start
+        &::-webkit-scrollbar
+            height: 2px
+        &::-webkit-scrollbar-thumb
+            background-color: $main
+        li
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
             a
-                color: #f5a83d
-            border-bottom: 1px solid #f5a83d
+                font-size: r(24px)
+                color: black
+                &:hover
+                    color: $main
+                &.active
+                    color: $main
+            &.active
+                color: $main

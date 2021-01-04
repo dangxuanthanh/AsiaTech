@@ -1,0 +1,42 @@
+.i-5
+    background-color: #eff6fb
+    padding: 100px 0
+    padding-bottom: 50px
+    @media screen and ( max-width: 1024px )
+        padding: 50px 0
+    .i-box
+        background-color: #ccc
+        border-radius: 5px
+        background-color: rgb(255, 255, 255)
+        box-shadow: 1.721px 2.457px 8px 0px rgba(0, 0, 0, 0.15)
+        a
+            +img-ratio(380/285)
+    .item-5
+        position: relative
+        padding-top: 20px
+        padding-bottom: 50px
+        border-bottom: 1px solid #ccc
+        .title
+            margin-top: 10px
+            a
+                font-size: r(16px)
+                color: black
+    .swiper-button-next
+        position: absolute
+        color: #999999
+        border: 1px solid #999999
+        top: 30%
+        right: -80px
+        &:hover
+            color: white
+    .swiper-button-prev
+        position: absolute
+        color: #999999
+        border: 1px solid #999999
+        top: 30%
+        left: -80px
+        &:hover
+            color: white
+    .swiper-but
+        @media screen and ( max-width: 1024px )
+            display: none

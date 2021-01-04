@@ -1,0 +1,27 @@
+.hr-list
+    .wrapper
+        padding: 30px
+    .info
+        .img-wrapper
+            background-color: #ccc
+            +img-ratio(350/600)
+    .title-block
+        text-align: left
+    .content-block
+        @media screen and ( max-width: 1023.9px )
+            margin-top: 30px
+    .fullcontent
+        overflow-x: auto
+        padding-right: 35px
+        height: 265px
+        font-size: r(16px)
+        &::-webkit-scrollbar
+            width: 5px
+        &::-webkit-scrollbar-thumb
+            background-color: $main
+        p
+            margin-bottom: 35px
+            @media screen and ( max-width: 1023.9px )
+                margin-bottom: 15px
+        @media screen and ( max-width: 1200px )
+            height: 220px

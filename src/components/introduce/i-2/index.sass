@@ -1,0 +1,53 @@
+.i-2
+    .background-sec2
+        padding: 60px 0
+    .content-introduce
+    .head-title
+        height: 100%
+        display: flex
+        justify-content: center
+        flex-direction: column
+        @media screen and ( max-width: 768px )
+            margin-bottom: 30px
+        .title
+            font-size: r(36px)
+            color: white
+            text-transform: uppercase
+            font-weight: 700
+            p
+                display: flex
+                flex-direction: column
+                span
+                    &:last-child
+                        color: $main
+        .caption
+            font-size: r(16px)
+            color: white
+    .content-block
+        background: rgba(255,255,255, 0.8)
+        padding: 60px 30px
+    .content-group
+        display: flex
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+        .image
+            width: 100px
+            display: flex
+            justify-content: center
+            padding-top: 10px
+            align-items: flex-start
+            margin-right: 30px
+        .text
+            .title
+                font-size: r(24px)
+                text-transform: none
+                font-weight: 500
+                color: #0c4da2
+            .content
+                font-size: r(16px)
+    .content-introduce
+        .col-6
+            &:nth-child(2)
+                padding-right: 60px
+                padding-left: 60px

@@ -1,0 +1,33 @@
+.i-3
+    padding: 60px 0
+    .item-3
+        .image-wrapper
+            background-color: #ccc
+            +img-ratio(750/600)
+        .content-block
+            height: 100%
+            margin-left: -80px
+            display: flex
+            justify-content: center
+            align-items: center
+            @media screen and ( max-width: 1023.9px )
+                margin-left: 0
+            .title-block
+                color: white
+                text-align: left
+        .fullcontent
+            color: white
+            padding: 50px 100px
+            background: #0c50a0
+            font-size: r(16px)
+            @media screen and ( max-width: 1024px )
+                padding: 20px 15px
+            h5
+                font-size: r(24px)
+                font-weight: 500
+                margin-top: 30px
+                &:first-child
+                    margin-top: 0
+            span
+                display: flex
+                margin-top: 30px

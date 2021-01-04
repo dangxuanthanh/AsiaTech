@@ -5,10 +5,19 @@
         display: flex
         line-height: 1
         justify-content: space-between
+        @media screen and ( max-width: 576px )
+            display: block
+    .tab-panels
+        display: flex
+        align-items: center
+        @media screen and ( max-width: 576px )
+            margin-top: 20px
+        li
+            padding-bottom: 15px
     .title-block
         text-align: left
     .news-block
-        margin-top: 60px
+        margin-top: 40px
         .news-large
             background-color: rgb(255, 255, 255)
             box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1)
